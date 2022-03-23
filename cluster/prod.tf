@@ -38,7 +38,7 @@ provider "kubernetes" {
 
 module "gke" {
   source                          = "../modules/beta-autopilot-public-cluster/"
-  project_id                      = "rmk-demo-344812"
+  project_id                      = "thrinadsandbox-344414"
   name                            = "${local.cluster_type}-prod-cluster"
   regional                        = true
   region                          = "europe-west1"
