@@ -19,5 +19,5 @@ variable "apis_to_activate" {
   "cloudbuild.googleapis.com", 
   "sourcerepo.googleapis.com", 
   "cloudresourcemanager.googleapis.com", 
-  "servicenetworking.googleapis.com"]
+  "compute.googleapis.com"]
 }

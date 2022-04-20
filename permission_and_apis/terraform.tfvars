@@ -1,7 +1,7 @@
-project = "my-bn-prj"
+project = "rmk-prj-bn"
 
-project_id = "my-bn-prj"
+project_id = "rmk-prj-bn"
 
-region = "europe-west2"
+region = "us-central1"
 
-project_number = "637544774974"
+project_number = "1056127660266"

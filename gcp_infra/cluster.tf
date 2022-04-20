@@ -1,7 +1,7 @@
-/* resource "google_container_cluster" "prod" {
+resource "google_container_cluster" "prod" {
  enable_autopilot            = true   
  location                    = var.region
- name                        = "prod"
+ name                        = var.gke_prod_name
  network                     = google_compute_network.vpc_network.id
  subnetwork                  = google_compute_subnetwork.custom_subnet.id
  project                     = var.project
@@ -14,7 +14,7 @@
 resource "google_container_cluster" "staging" {
  enable_autopilot            = true   
  location                    = var.region
- name                        = "staging"
+ name                        = var.gke_staging_name
  network                     = google_compute_network.vpc_network.id
  subnetwork                  = google_compute_subnetwork.custom_subnet.id
  project                     = var.project
@@ -22,4 +22,4 @@ resource "google_container_cluster" "staging" {
           cluster_secondary_range_name  = "stg-pods-range"
           services_secondary_range_name = "stg-svc-range"
         }
-} */
+}
